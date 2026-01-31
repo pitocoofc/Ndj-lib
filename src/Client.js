@@ -5,27 +5,37 @@ const path = require('path');
 
 class EasyBot {
     constructor(options = {}) {
-        this.token = options.token;
+        // Limpa espaços invisíveis do token para evitar o erro de TokenInvalid
+        this.token = typeof options.token === 'string' ? options.token.trim() : options.token;
+        
         this.client = new Client({
-            intents: options.intents || [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
+            intents: options.intents || [
+                GatewayIntentBits.Guilds, 
+                GatewayIntentBits.GuildMessages, 
+                GatewayIntentBits.MessageContent
+            ]
         });
         this.commands = new Map();
     }
 
     // --- SISTEMA DE MÓDULOS DNT ---
 
-    // Função para o bot carregar o módulo
     useModule(moduleName) {
         const modulePath = path.join(process.cwd(), 'modules', moduleName, 'index.js');
         
         try {
             if (fs.existsSync(modulePath)) {
-                // Antes de carregar, rodamos o fiscal de versão
+                // Valida a versão do módulo antes de carregar
                 this.constructor.checkModule(path.dirname(modulePath));
 
                 const module = require(modulePath);
-                module.init(this); 
-                console.log(`📦 [DNT] Módulo '${moduleName}' carregado com sucesso!`);
+                
+                if (typeof module.init === 'function') {
+                    module.init(this); 
+                    console.log(`📦 [DNT] Módulo '${moduleName}' carregado com sucesso!`);
+                } else {
+                    console.error(`❌ [DNT] O módulo '${moduleName}' não possui a função init().`);
+                }
             } else {
                 console.error(`❌ [DNT] Módulo '${moduleName}' não encontrado em ./modules/`);
             }
@@ -34,7 +44,6 @@ class EasyBot {
         }
     }
 
-    // O "Fiscal" que valida o manifest.dnt
     static checkModule(modulePath) {
         const manifestPath = path.join(modulePath, 'manifest.dnt');
         
@@ -62,10 +71,15 @@ class EasyBot {
         }
     }
 
-    // --- SISTEMA DE COMANDOS ---
+    // --- SISTEMA DE COMANDOS (AGORA COM OPTIONS) ---
 
-    command({ name, description, run }) {
-        this.commands.set(name, { description, run });
+    command({ name, description, options, run }) {
+        // Registra o comando no Map, incluindo o array de opções
+        this.commands.set(name, { 
+            description, 
+            options: options || [], 
+            run 
+        });
     }
 
     async start() {
@@ -75,9 +89,12 @@ class EasyBot {
             console.log(`✅ Bot online como ${c.user.tag}`);
             
             const rest = new REST({ version: '10' }).setToken(this.token);
+            
+            // Mapeia os comandos para o formato JSON do Discord, incluindo as options
             const commandsJSON = Array.from(this.commands.entries()).map(([name, cmd]) => ({
                 name: name,
-                description: cmd.description
+                description: cmd.description,
+                options: cmd.options // Essencial para aparecer o campo de usuário/valor
             }));
 
             try {
@@ -97,8 +114,10 @@ class EasyBot {
                 try {
                     await cmd.run(ctx);
                 } catch (err) {
-                    console.error(err);
-                    interaction.reply({ content: 'Houve um erro ao executar este comando!', ephemeral: true });
+                    console.error("Erro no comando:", err);
+                    if (!interaction.replied) {
+                        interaction.reply({ content: 'Houve um erro ao executar este comando!', ephemeral: true });
+                    }
                 }
             }
         });
