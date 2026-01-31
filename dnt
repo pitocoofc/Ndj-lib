@@ -1,0 +1,16 @@
+#!/bin/bash
+# dnt - Gerenciador de Módulos DNT
+
+if [ "$1" == "install" ]; then
+    REPO=$2
+    FOLDER_NAME=$(echo $REPO | cut -d'/' -f2)
+    
+    echo "📥 Buscando módulo no GitHub: $REPO..."
+    mkdir -p modules
+    git clone "https://github.com/$REPO.git" "./modules/$FOLDER_NAME"
+    
+    # Chama o Fiscal que você já integrou no Client.js
+    node -e "require('./src/Client').checkModule('./modules/$FOLDER_NAME')"
+else
+    echo "Uso: ./dnt install usuario/repositorio"
+fi
