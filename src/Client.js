@@ -8,6 +8,25 @@ class EasyBot {
             intents: options.intents || [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]
         });
         this.commands = new Map();
+        const path = require('path');
+
+useModule(moduleName) {
+    // Define o caminho para a pasta modules que o script 'dnt' cria
+    const modulePath = path.resolve(process.cwd(), 'modules', moduleName, 'index.js');
+    
+    try {
+        if (fs.existsSync(modulePath)) {
+            const module = require(modulePath);
+            module.init(this); // Passa a instância do bot para o módulo
+            console.log(`📦 [DNT] Módulo '${moduleName}' carregado com sucesso!`);
+        } else {
+            console.error(`❌ [DNT] Módulo '${moduleName}' não encontrado em ./modules/`);
+        }
+    } catch (err) {
+        console.error(`❌ [DNT] Erro ao carregar módulo '${moduleName}':`, err.message);
+    }
+}
+        
     }
 
     // Registra o comando na memória da lib
