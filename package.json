@@ -1,6 +1,6 @@
 {
   "name": "easy-djs-bot",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "Uma camada simplificada sobre o discord.js para iniciantes",
   "main": "src/index.js",
   "dependencies": {
@@ -13,6 +13,10 @@
     "easy",
     "bot"
   ],
-  "author": "Seu Nome",
-  "license": "MIT"
+  "author": "Pitoco",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dnt"
+  ]
 }
