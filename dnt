@@ -7,10 +7,14 @@ if [ "$1" == "install" ]; then
     
     echo "📥 Buscando módulo no GitHub: $REPO..."
     mkdir -p modules
+    
+    # Se a pasta já existir, remove para atualizar
+    rm -rf "./modules/$FOLDER_NAME"
+    
     git clone "https://github.com/$REPO.git" "./modules/$FOLDER_NAME"
     
-    # Chama o Fiscal que você já integrou no Client.js
-    node -e "require('./src/Client').checkModule('./modules/$FOLDER_NAME')"
+    # O AJUSTE ESTÁ AQUI: Apontando para a pasta correta dentro de node_modules
+    node -e "require('./node_modules/easy-djs-bot/src/Client').checkModule('./modules/$FOLDER_NAME')"
 else
     echo "Uso: ./dnt install usuario/repositorio"
 fi
