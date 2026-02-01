@@ -30,6 +30,7 @@ git clone https://github.com/pitocoofc/Ndj-lib.git
 
 # Entre na pasta e instale os módulos que desejar
 ./dnt install pitocoofc/dnt-ia
+
 ./dnt install pitocoofc/dnt-economy
 
 
@@ -41,3 +42,7 @@ Novo módulo de IA por respostas pré-definidas (Seguro para GitHub).
 
 
 Esse projeto está em beta aberta e não possui uma linguagem de programação avançada...apenas compatibilidade e resumo de node.js para discord.js com uma camada de simplificação 
+
+
+# Para desenvolvedores
+Deseja criar seu modulo? copie o codigo e o repositório dos modulos oficiais e altere para seu sistema ou espere o servidor do discord
