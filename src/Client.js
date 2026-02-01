@@ -100,6 +100,7 @@ class EasyBot {
             try {
                 await rest.put(Routes.applicationCommands(c.user.id), { body: commandsJSON });
                 console.log('🚀 Slash Commands registrados com sucesso!');
+                console.log('Created by Ghost in https://github.com/pitocoofc/Ndj-lib.git');
             } catch (error) {
                 console.error('❌ Erro ao registrar comandos:', error);
             }
