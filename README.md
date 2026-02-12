@@ -46,3 +46,17 @@ Esse projeto está em beta aberta e não possui uma linguagem de programação a
 
 # Para desenvolvedores
 Deseja criar seu modulo? copie o codigo e o repositório dos modulos oficiais e altere para seu sistema ou espere o servidor do discord
+
+
+# ⚠️ AVISO
+A NDJ-LIB é um projeto de código aberto e não possui um servidor de comunidade oficial.
+​Suporte: Solicite ajuda apenas respondendo a mensagens oficiais em posts no Reddit vinculados à conta do criador (Ghost/pitocoofc).
+​Segurança: Não nos responsabilizamos por módulos baixados de terceiros. A segurança da lib depende do uso de fontes oficiais e manutenção ativa.
+​Instalação Oficial: Utilize sempre o comando ./dnt install pitocoofc/NOME_DO_MODULO para garantir que está baixando um recurso avaliado pela administração.
+
+
+# 🤝 Contribuição e Suporte
+Deseja auxiliar no desenvolvimento da Ndj-lib ou solicitar suporte técnico?
+Onde me encontrar: Estou presente no servidor oficial de Node.js no Discord utilizando o pseudônimo Kelvyn (kelvyn43527).
+Endereço do Servidor: discord.gg/nodejs
+Aviso: Este é o único meio de comunicação direta além das threads oficiais no Reddit.
