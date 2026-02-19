@@ -2,3 +2,4 @@
 ./dnt install pitocoofc/ndj-security 
 ./dnt install pitocoofc/dnt-embed
 ./dnt install pitocoofc/dnt-ia
+./dnt install pitocoofc/dnt-economy
