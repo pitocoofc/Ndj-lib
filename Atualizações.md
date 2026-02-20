@@ -1,22 +1,32 @@
-# Ndj-Lib
-none
-nenhuma
-ninguno
-keiner
-
-# Modules 
-Add new economy system
-Add new embed system
-Improvement in the economic system 
-
-
-# community
-N/A
+# Update 20/02/26
+Version installation hub 
+New license
+Optimization and launch of the lite version.
+Canary version launch project
+Review of the discord.js API and evaluation of ndj-lib usage.
+visual improvement of the installation 
+warehouse division
+launch of the official website
 
 
-# Support language
-Português-PT
-Português-BR
+# Emerging goals
+Linux/Windows version
+python version
+Java version
+command text connection
+Optimization to 25kb in the lute version.
+Production of version 1.1.0 has begun.
+availability of older versions
+start integrating English into the project
+
+
+
+
+
+
+
+
+
 
 # Goals 
 
