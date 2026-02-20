@@ -1,0 +1,68 @@
+//Atenção!!! Esse arquivo não influencia o funcionamento da NDJ lib... Apenas ignore tudo que tenha html ou css no nome...muito trabalho ficar escrevendo aviso pra curioso preocupado
+
+:root {
+    --bg: #0a0a0c;
+    --text: #e6edf3;
+    --purple: #6f2da8; /* Da borda da logo */
+    --blue: #005a82; /* Do fundo da logo */
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px var(--purple));
+}
+
+.video-box {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+    border: 2px solid var(--blue);
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.btn-github {
+    background: linear-gradient(135deg, var(--blue), var(--purple));
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+footer {
+    padding: 40px;
+    background: #121214;
+}
+
+.footer-nav a {
+    color: var(--text);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.footer-nav a:hover { opacity: 1; color: var(--blue); }
+
+.doc-page { text-align: left; align-items: flex-start; max-width: 600px; margin: auto; }
+.btn-back { color: var(--purple); text-decoration: none; margin-top: 30px; display: block; }
