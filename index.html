@@ -1,34 +1,151 @@
-// Atenção!!! Esse arquivo não influencia o funcionamento da NDJ e recomendamos fortemente q exclua ele caso seja incluído no download da biblioteca 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NDJ-Lib | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NDJ-Lib | Power in your Mobile</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --card: #161b22;
+            --text: #e6edf3;
+            --purple: #6f2da8; /* Extraído da borda da sua logo */
+            --blue: #005a82;   /* Extraído do fundo da sua logo */
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Estilo da Logo com brilho cyberpunk */
+        .logo {
+            width: 160px;
+            filter: drop-shadow(0 0 20px var(--purple));
+            margin-bottom: 10px;
+        }
+
+        h1 { 
+            font-size: 3.5rem; 
+            margin: 10px 0; 
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #fff, var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline { 
+            opacity: 0.7; 
+            font-size: 1.2rem; 
+            margin-bottom: 30px; 
+        }
+
+        /* Container do vídeo local */
+        .video-wrapper {
+            width: 100%;
+            max-width: 320px;
+            margin: 30px auto;
+            border: 2px solid var(--blue);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            background: #000;
+        }
+
+        /* Botão Principal com o degradê da marca */
+        .btn-github {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: white;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn-github:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(111, 45, 168, 0.5);
+        }
+
+        /* Rodapé com links de texto */
+        footer {
+            padding: 60px 20px;
+            background: #0d1117;
+            border-top: 1px solid #30363d;
+            text-align: center;
+        }
+
+        .copy { 
+            font-size: 0.85rem; 
+            opacity: 0.4; 
+            margin-bottom: 20px; 
+            display: block;
+        }
+
+        .footer-nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .footer-nav a:hover { 
+            opacity: 1; 
+            color: var(--blue); 
+        }
+
+        /* Ajuste para Mobile */
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5rem; }
+            .logo { width: 130px; }
+        }
+    </style>
 </head>
 <body>
+
     <main class="container">
-        <img src="1000012007.png" alt="Logo NDJ" class="logo"> <h1>Ndj-lib</h1>
-        <p class="tagline">Potencialize seu bot de Discord diretamente pelo Termux.</p>
+        <img src="1000012007.png" alt="Ndj-lib Logo" class="logo">
         
-        <div class="video-box">
-            <video controls poster="thumb.jpg" width="100%">
+        <h1>Ndj-lib</h1>
+        <p class="tagline">A biblioteca modular para automação de bots via Termux.</p>
+
+        <div class="video-wrapper">
+            <video width="100%" controls poster="thumb.jpg" playsinline>
                 <source src="1000012005.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
+                Seu navegador não suporta a exibição de vídeos nativos.
             </video>
         </div>
 
-        <a href="https://github.com/pitocoofc/Ndj-lib" class="btn-github">Ver no GitHub</a>
+        <a href="https://github.com/pitocoofc/Ndj-lib" class="btn-github">Acessar GitHub</a>
     </main>
 
     <footer>
-        <p class="copy">&copy; 2026 Ndj-lib Dev Team. Todos os direitos reservados.</p>
+        <span class="copy">&copy; 2026 Ndj-lib Dev Team. Todos os direitos reservados.</span>
         <nav class="footer-nav">
             <a href="termos.html">Termos</a>
             <a href="updates.html">Atualizações</a>
         </nav>
     </footer>
+
 </body>
 </html>
