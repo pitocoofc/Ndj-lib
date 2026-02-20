@@ -11,10 +11,11 @@ Facilidade de Uso: Esqueça configurações complexas de APIs; foque apenas na l
 
 
 # 🛡️ Autoria e Direitos
-Este é um projeto Open Source protegido pela Licença MIT.
-Criador: Ghost (pitocoofc).
-Repositório Oficial: github.com/pitocoofc/Ndj-lib.
-Nota: Você é livre para clonar e modificar, mas a manutenção dos créditos originais no console e nos arquivos de licença é obrigatória por lei e por respeito ao desenvolvimento mobile.
+
+Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da **GNU General Public License** conforme publicada pela Free Software Foundation; tanto a **versão 2** da Licença, como (a seu critério) qualquer versão posterior.
+
+Este programa é distribuído na esperança de que possa ser útil, mas **SEM NENHUMA GARANTIA**. Veja a licença completa no arquivo `LICENSE` para mais detalhes.
+
 
 
 # ⚠️ Limites e Avisos
