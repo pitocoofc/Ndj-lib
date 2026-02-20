@@ -1,3 +1,21 @@
+# IMPORTANTE 
+It's sad to announce...NDJ-LIB has increased in size to 10MB due to the website and configuration issues...Do you know the solution? The NDJ Hub.🎉🎉🎉🎉🎉
+ALL VERSIONS OF NDJ-LIB IN JUST ONE PLACE
+
+Versões para devs e curiosos: https://github.com/pitocoofc/NDJ-LIB-versions-.git
+
+Download para usuarios padrões:
+https://github.com/pitocoofc/NDJ-LIB-HUB.git
+
+This new system reduced the file size from 10MB to less than 500KB in version 1.0.9... So what? Who's going to make this HUB and version 1.0.9 run on a J1?
+
+
+
+
+
+
+
+
 # 🚀 Ndj-lib (v1.0.9)
 A biblioteca definitiva para criar bots de Discord complexos diretamente do Termux.
 Desenvolvida com foco em simplicidade e performance mobile, a Ndj-lib permite que você transforme seu celular em uma central de desenvolvimento de bots, sem a necessidade de um PC.
