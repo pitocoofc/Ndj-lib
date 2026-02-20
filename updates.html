@@ -101,18 +101,28 @@ npm install</code></pre>
         <div class="step">
             <h3><span class="step-num">3</span> Código Mínimo</h3>
             <p>Crie um arquivo <code>index.js</code> e cole o código base para iniciar sua jornada:</p>
-            <pre><code>const { Client } = require('./src/index');
-const bot = new Client({
-    token: 'SEU_TOKEN_AQUI',
-    prefix: '!',
-    adminId: 'SEU_ID_DO_DISCORD'
+            <pre><code>const { Client } = require('easy-djs-bot');
+
+                Inicio do bot
+const bot = new EasyBot({
+    token: 'SEU TOKEN'
 });
 
-bot.on('ready', () => {
-    console.log(`${bot.user.tag} está online via Ndj-lib!`);
-});
+ Defina suas configurações globais aqui
+                
+bot.config = {
+    ownerId: 'SEU ID DO DISCORD', // Pegue seu ID no discord
+    messagespam: 5,                   // Limite para mensagem 
+    limitmessagespam: 15              // Tempo para o filtor de mensagem 
+};
 
-bot.start();</code></pre>
+                
+      Preparação para iniciar
+bot.start().catch(err => {
+    console.error("Erro fatal no bot:", err);
+});
+                
+</code></pre>
         </div>
 
         <div style="text-align: center;">
