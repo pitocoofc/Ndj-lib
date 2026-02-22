@@ -1,3 +1,18 @@
+# 22/02/26 (Sim...Comecei a trabalhar)
+We now have our Wikipedia-style library for ndj-lib-exclusive bots, accessible via API request.
+
+I also finally found the easy-bot bug and just fixed it.
+
+We also have a new folder called Secret that... well, you probably know what's in it.
+
+I'm also unsure about translation by device configuration or version... It's so much work!
+
+I'm also thinking about putting together a team to build ndj and prepare for the next version of the Discord API... Those guys from Bahianos (Bahianos is a term used to describe lazy people or developers who are hindering the development of something important or essential for another user... Or simply a criticism of poor programming from the team) are blocking the tests for version 1.1.0.
+
+
+
+
+
 # Update 20/02/26
 Version installation hub 
 New license
