@@ -2,6 +2,9 @@
 It's sad to announce...NDJ-LIB has increased in size to 10MB due to the website and configuration issues...Do you know the solution? The NDJ Hub.🎉🎉🎉🎉🎉
 ALL VERSIONS OF NDJ-LIB IN JUST ONE PLACE
 
+Site da ndj-lib:
+https://pitocoofc.github.io/Ndj-lib/
+
 Versões para devs e curiosos: https://github.com/pitocoofc/NDJ-LIB-versions-.git
 
 Download para usuarios padrões:
