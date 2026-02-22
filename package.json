@@ -14,7 +14,7 @@
     "bot"
   ],
   "author": "Pitoco",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "files": [
     "src",
     "dnt"
