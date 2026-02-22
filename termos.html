@@ -9,8 +9,8 @@
             --bg: #0a0a0c;
             --card: #161b22;
             --text: #e6edf3;
-            --purple: #6f2da8; /* Cor da borda da logo */
-            --blue: #005a82;   /* Cor do fundo da logo */
+            --purple: #6f2da8; 
+            --blue: #005a82;   
         }
 
         body {
@@ -49,18 +49,14 @@
             padding: 20px;
             border-radius: 10px;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             border-left: 4px solid var(--purple);
             margin: 20px 0;
+            white-space: pre-wrap;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
 
         .btn-back {
             display: inline-block;
@@ -72,46 +68,39 @@
             opacity: 0.7;
         }
 
-        .btn-back:hover {
-            opacity: 1;
-            color: var(--blue);
-        }
-
+        .btn-back:hover { opacity: 1; color: var(--blue); }
         strong { color: #fff; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Termos e Licença</h1>
+        <h1>Termos e Licença (GPL-2.0)</h1>
         
-        <p>A <strong>Ndj-lib</strong> é um software de código aberto, desenvolvido para facilitar a criação de bots de Discord via Termux. Ao utilizar, clonar ou distribuir este projeto, você concorda com os termos da <strong>Licença MIT</strong> descritos abaixo.</p>
+        <p>A <strong>Ndj-lib</strong> é um software livre. Ao utilizar este projeto, você concorda com os termos da <strong>GNU General Public License v2.0</strong>. Diferente da MIT, esta licença garante que o software permaneça livre para todos os usuários.</p>
 
         <div class="license-box">
-            Copyright (c) 2026 Ndj-lib Dev Team<br><br>
-            Permission is hereby granted, free of charge, to any person obtaining a copy of this software...
+Copyright (C) 2026 Ndj-lib Dev Team
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </div>
 
-        <h2>1. O que você PODE fazer (Permissões)</h2>
+        <h2>1. O que você PODE fazer</h2>
         <ul>
-            <li><strong>Uso Comercial:</strong> Você pode usar a Ndj-lib em projetos que gerem lucro sem pagar nada por isso.</li>
-            <li><strong>Modificação:</strong> O código é seu para mudar. Sinta-se livre para alterar o sistema de economia ou o painel admin conforme sua necessidade.</li>
-            <li><strong>Distribuição:</strong> Você pode enviar o código para outras pessoas ou incluí-lo em seus próprios pacotes.</li>
-            <li><strong>Sublicenciamento:</strong> Você pode incorporar a lib em softwares que possuem licenças diferentes.</li>
+            <li><strong>Uso e Distribuição:</strong> Você pode rodar, copiar e distribuir a lib livremente.</li>
+            <li><strong>Modificação:</strong> Você pode alterar o código (como as pastas <code>src</code> e <code>dnt</code>).</li>
         </ul>
 
-        <h2>2. Suas OBRIGAÇÕES (Condições)</h2>
+        <h2>2. Suas OBRIGAÇÕES (Copyleft)</h2>
         <ul>
-            <li><strong>Manutenção de Créditos:</strong> O aviso de copyright e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do software. Não remova os créditos originais da Ndj-lib.</li>
+            <li><strong>Código Aberto:</strong> Se você modificar a Ndj-lib e distribuí-la, você <strong>DEVE</strong> disponibilizar o código-fonte modificado sob esta mesma licença.</li>
+            <li><strong>Manutenção de Créditos:</strong> É proibido remover os direitos autorais originais dos arquivos.</li>
         </ul>
 
-        <h2>3. Isenção de Responsabilidade (Aviso)</h2>
-        <p>O software é fornecido <strong>"COMO ESTÁ" (AS IS)</strong>. Isso significa que:</p>
-        <ul>
-            <li>Os desenvolvedores não oferecem garantias de que o software funcionará perfeitamente em todos os ambientes.</li>
-            <li>Não nos responsabilizamos por quaisquer danos, perdas de dados ou banimentos de contas resultantes do uso da biblioteca.</li>
-            <li>O suporte é comunitário e não obrigatório por parte dos autores originais.</li>
-        </ul>
+        <h2>3. Isenção de Responsabilidade</h2>
+        <p>O software é fornecido <strong>"COMO ESTÁ"</strong>. Os autores não se responsabilizam por danos ou banimentos resultantes do uso indevido da biblioteca em bots de Discord.</p>
 
         <a href="index.html" class="btn-back">← Voltar para a Página Inicial</a>
     </div>
