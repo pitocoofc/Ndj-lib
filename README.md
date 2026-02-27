@@ -1,3 +1,10 @@
+# News 27/02
+I'm trying to create an APK for ndj-lib and set up a server so you can host your bots for free.
+Don't get your hopes up lol
+
+
+
+
 # IMPORTANTE 
 It's sad to announce...NDJ-LIB has increased in size to 10MB due to the website and configuration issues...Do you know the solution? The NDJ Hub.🎉🎉🎉🎉🎉
 ALL VERSIONS OF NDJ-LIB IN JUST ONE PLACE
