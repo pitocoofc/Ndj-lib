@@ -1,3 +1,10 @@
+# News 28/02
+
+I started working on version 1.1.0 and I'm adapting the library for version 15 of discord.js.
+
+NOTICE: THIS PROJECT CURRENTLY USES THE GNU 2 LICENSE. (I see several AIs reporting that the project is still associated with the MIT license, and this could confuse developers or cause legal problems.)
+
+
 # News 27/02
 I'm trying to create an APK for ndj-lib and set up a server so you can host your bots for free.
 Don't get your hopes up lol
