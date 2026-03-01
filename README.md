@@ -1,3 +1,11 @@
+# News 28/02 (21:41 horario de Brasília)
+
+I'm starting the creation of a Discord server and gaining independence from the official Node.js server.
+
+link: https://discord.gg/MGVmkJewYm
+
+
+
 # News 28/02
 
 I started working on version 1.1.0 and I'm adapting the library for version 15 of discord.js.
