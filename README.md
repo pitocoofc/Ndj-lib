@@ -1,3 +1,37 @@
+# 4/03 
+supporting artificial intelligence 
+I ended up realizing that many users don't know how to use the LIB...that's sad.
+
+base:
+const { EasyBot } = require('easy-djs-bot');
+
+const bot = new EasyBot({
+  token: 'Your token'
+});
+
+bot.config = { //configurações de usuário 
+    ownerId: '1448096319372656703',
+    messagespam: 5,
+    limitmessagespam: 15
+};
+
+bot.useModule('dnt-teste'); //modulos oficiais...instale cok o dnt install
+bot.useModule('dnt-economy');
+bot.useModule('dnt-ia');
+bot.useModule('dnt-comunity');
+bot.useModule('dnt-gt');
+bot.useModule('ndj-security');
+bot.useModule('dnt-conf');
+bot.useModule('Dnt-search');
+bot.useModule('dnt-embed');
+
+bot.start().catch(err => {
+    console.error('Erro fatal no bot:', err);
+});
+
+
+
+
 # News 28/02 (21:41 horario de Brasília)
 
 I'm starting the creation of a Discord server and gaining independence from the official Node.js server.
