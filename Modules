@@ -3,3 +3,6 @@
 ./dnt install pitocoofc/dnt-embed
 ./dnt install pitocoofc/dnt-ia
 ./dnt install pitocoofc/dnt-economy
+./dnt install pitocoofc/Dnt-search
+
+Deseja criar seu modulo? Crie um manifest.dnt com a versão e parâmetros para depois criar o index.js e pronto... você criou seu modulo
