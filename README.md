@@ -1,3 +1,13 @@
+Site da ndj-lib:
+https://pitocoofc.github.io/Ndj-lib/
+
+Versões para devs e curiosos: https://github.com/pitocoofc/NDJ-LIB-versions-.git
+
+Download para usuarios padrões:
+https://github.com/pitocoofc/NDJ-LIB-HUB.git
+
+
+
 # 4/03 
 supporting artificial intelligence 
 I ended up realizing that many users don't know how to use the LIB...that's sad.
