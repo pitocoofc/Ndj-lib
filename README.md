@@ -8,6 +8,13 @@ https://github.com/pitocoofc/NDJ-LIB-HUB.git
 
 
 
+# Aviso muito importante 
+
+Eu acabo de rodar a ndj-lib e portar para lua 5.4 e está funcionando e irei lancar uma versão oficial do ndj.lua...isso finalmente é um avanço 
+
+
+
+
 # 4/03 
 supporting artificial intelligence 
 I ended up realizing that many users don't know how to use the LIB...that's sad.
