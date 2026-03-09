@@ -1,3 +1,12 @@
+# 09/03/2026 15:35
+I optimized the installation and lowered the file size by 50kb.
+
+I released the code version on GNU-2 in the version repository.
+
+Initiating new compatibilities
+
+
+
 # 22/02/26 (Sim...Comecei a trabalhar)
 We now have our Wikipedia-style library for ndj-lib-exclusive bots, accessible via API request.
 
