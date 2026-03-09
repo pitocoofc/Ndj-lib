@@ -7,10 +7,15 @@ Download para usuarios padrões:
 https://github.com/pitocoofc/NDJ-LIB-HUB.git
 
 
+The Lua test failed... The bot came online but the commands just didn't respond... I'm stuck on the response... we already have Slash registered, etc.
+
+I'm deciding on a new language for the library... I'm torn between Java, Python, C++, and C#.
+
+
 
 # Aviso muito importante 
 
-Eu acabo de rodar a ndj-lib e portar para lua 5.4 e está funcionando e irei lancar uma versão oficial do ndj.lua...isso finalmente é um avanço 
+Eu acabo de rodar a ndj-lib e portar para lua 5.4 e está funcionando e irei lançar uma versão oficial do ndj.lua...isso finalmente é um avanço 
 
 
 
