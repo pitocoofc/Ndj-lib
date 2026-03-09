@@ -13,7 +13,7 @@ I'm deciding on a new language for the library... I'm torn between Java, Python,
 
 
 
-# Aviso muito importante 
+# Aviso muito importante 08:03 (Horario de Brasília) 8/3
 
 Eu acabo de rodar a ndj-lib e portar para lua 5.4 e está funcionando e irei lançar uma versão oficial do ndj.lua...isso finalmente é um avanço 
 
