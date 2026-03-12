@@ -5,7 +5,11 @@ Delete o conteudo de texto puro
 PT: Este arquivo é minha solução para o bug de copy... basicamente agora ja vem com o código fonte que você pode alterar
 This is my solution for the copy bug... Now with a file that you only need to modify to configure your bot.
 
+Rename the file to bot.js and use Node.js.
+    renomeie o arquivo para bot.js e use node.js
 
+
+    
 const { EasyBot } = require('easy-djs-bot');
 
 const bot = new EasyBot({
