@@ -7,6 +7,12 @@ Download para usuarios padrões:
 https://github.com/pitocoofc/NDJ-LIB-HUB.git
 
 
+
+ATENÇÃO:
+O hub não está funcionando? você pode arrumar diretamente...utilize npm ou git clone e remova manualmente os arquivos inúteis 
+
+Is the hub not working? You can fix it directly...use npm or git clone and manually remove the unnecessary files. 
+
 # Bug (14:39 Brasilia Time)
 
 I noticed that the option to copy the normal code is completely bugged and joining it all together... This isn't a problem with the library and I don't see a way to fix it... I'm thinking of a...
