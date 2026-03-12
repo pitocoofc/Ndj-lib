@@ -7,6 +7,12 @@ Download para usuarios padrões:
 https://github.com/pitocoofc/NDJ-LIB-HUB.git
 
 
+# Bug (14:39 Brasilia Time)
+
+I noticed that the option to copy the normal code is completely bugged and joining it all together... This isn't a problem with the library and I don't see a way to fix it... I'm thinking of a...
+
+
+
 The Lua test failed... The bot came online but the commands just didn't respond... I'm stuck on the response... we already have Slash registered, etc.
 
 I'm deciding on a new language for the library... I'm torn between Java, Python, C++, and C#.
