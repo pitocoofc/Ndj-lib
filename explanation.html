@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo | NDJ-Lib</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --card: #161b22;
+            --text: #e6edf3;
+            --purple: #6f2da8;
+            --blue: #005a82;
+            --code-bg: #000;
+        }
 
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #30363d;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(111, 45, 168, 0.4);
+        }
+
+        h2 { color: var(--blue); border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-top: 40px; }
+        
+        .changelog-text { background: #0d1117; padding: 20px; border-radius: 10px; border-left: 4px solid var(--purple); margin: 20px 0; }
+
+        pre {
+            background: var(--code-bg);
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            border: 1px solid var(--blue);
+            color: #d1d5db;
+        }
+
+        code { font-family: 'Fira Code', monospace; font-size: 0.9rem; }
+
+        .step { margin-bottom: 30px; }
+        .step-num { background: var(--purple); color: white; padding: 2px 10px; border-radius: 50%; font-weight: bold; margin-right: 10px; }
+
+        .btn-back { display: inline-block; margin-top: 40px; color: var(--blue); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div style="text-align: center;">
+            <span class="version-badge">v1.0.9</span>
+            <h1>Notas de Atualização</h1>
+        </div>
+
+        <div class="changelog-text">
+            <p>A versão 1.0.9 consolida a <strong>Ndj-lib</strong> como uma das ferramentas mais estáveis para Termux. Focamos em performance e na experiência do usuário administrador.</p>
+            <ul>
+                <li><strong>Módulo de Economia:</strong> Otimização no salvamento de dados para evitar corrupção em desligamentos repentinos do celular.</li>
+                <li><strong>Painel Administrativo:</strong> Adicionado suporte a Modals interativos para criação dinâmica de comandos sem necessidade de reiniciar o bot.</li>
+                <li><strong>Segurança:</strong> Refatoração do sistema de permissões para garantir que apenas administradores acessem o painel central.</li>
+                <li><strong>Estabilidade Mobile:</strong> Redução do uso de CPU no Termux em 15%, garantindo que o bot rode liso em aparelhos de entrada.</li>
+            </ul>
+        </div>
+
+        <h2>🚀 Como Começar (Quick Start)</h2>
+
+        <div class="step">
+            <h3><span class="step-num">1</span> Instalação via Termux</h3>
+            <p>Abra seu terminal e clone o repositório oficial:</p>
+            <pre><code>git clone https://github.com/pitocoofc/Ndj-lib.git
+cd Ndj-lib
+npm install</code></pre>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">2</span> Pegando seu Token</h3>
+            <p>Vá ao <a href="https://discord.com/developers/applications" target="_blank" style="color: var(--purple);">Discord Developer Portal</a>, crie uma aplicação, vá em "Bot" e copie o seu <strong>Token</strong>. Certifique-se de ativar as "Privileged Gateway Intents".</p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-num">3</span> Código Mínimo</h3>
+            <p>Crie um arquivo <code>index.js</code> e cole o código base para iniciar sua jornada:</p>
+            <pre><code>
+                
+              A Ndj-lib é um projeto 
+focado 100% no publico mobile com o objetivo de otimizar e facilitar a criação de bots no discord
+
+  A ndj-lib não é de posse da Discord e de nenhuma outra instituição
+
+          A ndj-lib é um projeto indie com desenvolvimento constante e divisão de linguagens para facilitar a criação de bots por todas as formas
+
+  A ndj-lib é um projeto indie e pode se contradizer por conta de falta de atualização ou pressão constante....A versão atual é a 1.0.9 e é protegida pela licença GNU-2 
+
+      Esse projeto é 100% brasileiro e foi desenvolvido em 1 ano de estudo do ambiente discord e planejamento para lancar a lib publicamente 
+
+
+              A ndj-lib também não tem lucro direto ou indirero e não coleta dados de usuários até o momento. Projetos futuros pretendem guardar tokens unicos para validação de quantidade de usuarios ou coleta de performance com autorização do usuário e sem coleta de dados sensiveis como apis, tokens, ids ou qualquer outro tipo de coisa que vá beneficiar invasores ou colocar a conta/bot do desenvolvedor em risco
+
+          A versão oficial da ndj-lib é de codigo aberto com modulos oficiais que são 100% feiros pelo desenvolvedor e também de codigo aberto para passar uma imagem de segurança ao usuário 
+
+    A ndj-lib tem objetivos de criação de aplicativos, sites de hospedagem gratuita e aumento de comunidade para maior disponibilidade de módulos e auxilio no desenvolvimento 
+
+
+    A ndj-lib também é definida privadamente como primeira biblioteca modular de discord com publico mobile e base em discord.js com objetivo de websocket propio para independência de mercado
+
+              Atualmente a ndj-lib se encontra na versão 15 do discord e com preparação para a atualização 1.1.0
+              
+</code></pre>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-back">← Voltar para a Página Inicial</a>
+        </div>
+    </div>
+
+</body>
+          </html>
+          
