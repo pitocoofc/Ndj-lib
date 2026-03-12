@@ -1,1 +1,32 @@
+Esse é o código avançado da ndj-lib para você gerenciar
+This is the advanced ndj-lib code for you to manage
+    
+const { EasyBot } = require('easy-djs-bot');
 
+const bot = new EasyBot({
+    token: 'Bot_Token' // Sem o >
+});
+
+
+// Defina suas configurações globais aqui
+bot.config = {
+    ownerId: 'User_ID or 999 for null', // Pegue seu ID no Discord (botão direito no seu perfil)
+    messagespam: 5,                   // Limite para o módulo de segurança
+    limitmessagespam: 15              // Tempo para o módulo de segurança
+};
+
+
+
+bot.useModule('dnt-teste');
+bot.useModule('dnt-economy');
+bot.useModule('dnt-ia');
+bot.useModule('dnt-comunity');
+bot.useModule('dnt-gt');
+bot.useModule('ndj-security');
+bot.useModule('dnt-conf');
+bot.useModule('Dnt-search');
+bot.useModule('dnt-conf');
+bot.useModule('dnt-embed');
+bot.start().catch(err => {
+    console.error("Erro fatal no bot:", err);
+});
