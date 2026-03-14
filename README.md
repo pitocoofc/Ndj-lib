@@ -6,6 +6,18 @@ Versões para devs e curiosos: https://github.com/pitocoofc/NDJ-LIB-versions-.gi
 Download para usuarios padrões:
 https://github.com/pitocoofc/NDJ-LIB-HUB.git
 
+# Hoje um novo inicio 12:56
+
+The ndj-lib library has just gained its direct connection system with Discord, nicknamed ndj.js, and is currently in testing for the release of version 1.5.0 of ndj-lib. 
+
+This is a great step for ndj-lib, and I appreciate the support of the few who followed or used ndj-lib. 
+
+I am sincerely confident that we can reduce RAM usage to less than 80MB and file size to less than 60KB, reaching a larger or more loyal audience.
+
+
+
+
+
 
 
 ATENÇÃO:
