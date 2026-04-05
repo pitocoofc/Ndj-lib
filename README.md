@@ -1,3 +1,14 @@
+# Evolution 
+
+Today I had the idea to revisit the ndj-lib project and officially release its own API in a test version.
+
+URL: https://github.com/pitocoofc/ndj.j.git
+
+It is protected by the AGPL license and is currently undergoing slow development to fix bugs.
+
+What will happen to ndj-lib on Discord? The ndj-lib will continue to receive daily updates to fix discord.js versions and will likely be retired from heavy updates or moved to the new library. 
+
+
 Site da ndj-lib:
 https://pitocoofc.github.io/Ndj-lib/
 
